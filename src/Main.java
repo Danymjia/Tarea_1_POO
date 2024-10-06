@@ -6,19 +6,17 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         // Creación del menu
-
         int opcion;
         boolean continuar = true;
         while (continuar) {
-
             // Si quieres mejorar el menu de una :D
 
-            System.out.printf("\tBienvenido al sistema del programa\t");
-            System.out.printf("------Calculadora de Areas------------");
+            System.out.printf("\t\t\tBienvenido al sistema del programa\t\t\t");
+            System.out.printf("*-*-*-*-*- Calculadora de Areas *-*-*-*-*-\n");
             System.out.printf("1. Area de un triangulo");
             System.out.printf("2. Area de un cuadrado");
-            System.out.printf("3. Area de un circulo\n");
-            System.out.println("4. Salir");
+            System.out.printf("3. Area de un circulo");
+            System.out.println("4. Salir\n");
             System.out.println("Seleccione una opcion: ");
             opcion = sc.nextInt();
 
