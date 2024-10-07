@@ -9,13 +9,12 @@ public class Main {
         int opcion;
         boolean continuar = true;
         while (continuar) {
-            // Si quieres mejorar el menu de una :D
 
-            System.out.printf("\t\t\tBienvenido al sistema del programa\t\t\t");
+            System.out.printf("\t\t\tBienvenido al sistema del programa\t\t\t\n");
             System.out.printf("*-*-*-*-*- Calculadora de Areas *-*-*-*-*-\n");
-            System.out.printf("1. Area de un triangulo");
-            System.out.printf("2. Area de un cuadrado");
-            System.out.printf("3. Area de un circulo");
+            System.out.printf("1. Area de un triangulo\n");
+            System.out.printf("2. Area de un cuadrado\n");
+            System.out.printf("3. Area de un circulo\n");
             System.out.println("4. Salir\n");
             System.out.println("Seleccione una opcion: ");
             opcion = sc.nextInt();
@@ -27,28 +26,27 @@ public class Main {
                     System.out.println("Introduce la altura del triangulo:");
                     double altura = sc.nextDouble();
                     double area = (base*altura)/2;
-                    System.out.println("El area del triangulo es: " + area);
+                    System.out.println("El area del triangulo es: " + area + "\n");
                     break;
                 case 2:
                     System.out.println("Introduce el lado del cuadrado:");
                     double lado = sc.nextDouble();
                     double cuadrado = lado*lado;
-                    System.out.println("El area del cuadrado es: " + cuadrado);
+                    System.out.println("El area del cuadrado es: " + cuadrado + "\n");
                     break;
                 case 3:
                     System.out.println("Introduce el radio del circulo:");
                     double radio = sc.nextDouble();
                     double circulo = Math.PI * Math.pow(radio, 2);
-                    System.out.println("El area del circulo es: " + circulo);
+                    System.out.println("El area del circulo es: " + circulo + "\n");
                     break;
                 case 4:
-
-                    //// Dany ponle la función para salir del programa porfa que ya llego a mi casa :D
-
-
-                    //// Agrega la funcion de la opcion no válida y queda el programa
-                    
-
+                    continuar = false;
+                    System.out.println("\tSaliendo del programa\t\n");
+                    break;
+                default:
+                    System.out.println("Opcion no valida, intentalo de nuevo.\n");
+                    break;
 
             }
         }
